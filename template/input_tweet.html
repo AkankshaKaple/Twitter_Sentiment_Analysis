@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Demo For Twitter Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+
+<div style="padding:50px 50px;">
+    <b style="font-size:25px;">Twitter Sentiment Analysis</b>
+    <br>
+<form class="form_class" method="post" action="index">
+
+        <div>
+
+            <input type="text" name="my_tweet" class="tweet" id="tweet-id" placeholder="Enter your tweet" autocomplete="off">
+        </div>
+
+        <br>
+        <div>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </div>
+</form>
+
+<br>
+<b style="font-family:lato;font-size:20px;">Sentiment Behind Your Tweet</b><br>
+<div class="container-tweet">
+    <center>{{my_tweet}}</center>
+</div>
+
+</div>
+</body>
+</html>
